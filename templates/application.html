@@ -1,21 +1,25 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta charset="utf-8">
-    <title>Buffalo - Valibuffalo</title>
+    <title>Buffalo - Cucu</title>
     <%= stylesheetTag("application.css") %>
     <meta name="csrf-param" content="authenticity_token" />
     <meta name="csrf-token" content="<%= authenticity_token %>" />
     <link rel="icon" href="<%= assetPath("images/favicon.ico") %>">
   </head>
   <body class="app sidebar-mini rtl">
+    <%= partial("app-header-nav.html") %>
+    <%= partial("app-side-nav.html") %>
 
-    <div class="container">
+    <main class="app-content">
+      <%= partial("app-title.html") %>
       <%= partial("flash.html") %>
       <%= yield %>
-    </div>
-
+    </main>
     <%= javascriptTag("application.js") %>
+
+    <%= contentOf("pageScript") %>
   </body>
 </html>

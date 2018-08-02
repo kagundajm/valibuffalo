@@ -1,34 +1,16 @@
-# Welcome to Buffalo!
+# ValiBuffalo
 
-Thank you for choosing Buffalo for your web development needs.
+ValiBuffalo demonstrates how you can use [vali-admin dashboard template](https://pratikborsadiya.in/vali-admin/) in a [Buffalo](https://gobuffalo.io/en) application. A tutorial on how to add the template to the project can be located at 
 
-## Database Setup
+## Getting Started
 
-It looks like you chose to set up your application using a postgres database! Fantastic!
+Clone or download the repo. Edit the urls in the `database.yml` file to match the location of where you downloaded the app. Then run:
+```
+$ buffalo setup
+$ buffalo dev
+```
 
-The first thing you need to do is open up the "database.yml" file and edit it to use the correct usernames, passwords, hosts, etc... that are appropriate for your environment.
-
-You will also need to make sure that **you** start/install the database of your choice. Buffalo **won't** install and start postgres for you.
-
-### Create Your Databases
-
-Ok, so you've edited the "database.yml" file and started postgres, now Buffalo can create the databases in that file for you:
-
-	$ buffalo db create -a
-
-## Starting the Application
-
-Buffalo ships with a command that will watch your application and automatically rebuild the Go binary and any assets for you. To do that run the "buffalo dev" command:
-
-	$ buffalo dev
-
-If you point your browser to [http://127.0.0.1:3000](http://127.0.0.1:3000) you should see a "Welcome to Buffalo!" page.
-
-**Congratulations!** You now have your Buffalo application up and running.
-
-## What Next?
-
-We recommend you heading over to [http://gobuffalo.io](http://gobuffalo.io) and reviewing all of the great documentation there.
+If you now visit [http://localhost:3000](http://localhost:3000) in your browser, you should see the app.
 
 Good luck!
 

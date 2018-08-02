@@ -48,6 +48,24 @@ func App() *buffalo.App {
 		app.Use(translations())
 
 		app.GET("/", HomeHandler)
+		app.GET("/charts", ChartsHandler)
+		app.GET("/components", ComponentsHandler)
+		app.GET("/cards", CardsHandler)
+		app.GET("/widgets", WidgetsHandler)
+		app.GET("/form-components", FormComponentsHandler)
+		app.GET("/form-custom", FormCustomHandler)
+		app.GET("/form-samples", FormSamplesHandler)
+		app.GET("/form-notifications", FormNotificationsHandler)
+		app.GET("/table-basic", TableBasicHandler)
+		app.GET("/table-data-table", DataTableHandler)
+		app.GET("/blank-page", BlankPageHandler)
+		app.GET("/page-login", PageLoginHandler)
+		app.GET("/page-lockscreen", LockscreenHandler)
+		app.GET("/page-user", PageUserHandler)
+		app.GET("/page-invoice", PageInvoiceHandler)
+		app.GET("/page-calendar", PageCalendarHandler)
+		app.GET("/page-mailbox", PageMailboxHandler)
+		app.GET("/page-error", PageErrorHandler)
 
 		app.ServeFiles("/", assetsBox) // serve files from the public directory
 	}
