@@ -12,6 +12,8 @@ $ buffalo dev
 
 If you now visit [http://localhost:3000](http://localhost:3000) in your browser, you should see the app.
 
+<p align="center"><img src="https://github.com/kagundajm/valibuffalo/blob/master/vali-theme-chart.png"></p>
+
 Good luck!
 
 [Powered by Buffalo](http://gobuffalo.io)
